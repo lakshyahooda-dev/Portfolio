@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -20,7 +20,12 @@
     <title>Lakshya Hooda | Data Analyst</title>
 
     <!-- Base / Home CSS -->
-    <link rel="stylesheet" href="./css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/style.css">
 
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="./css/responsive.css">
@@ -33,6 +38,9 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
         rel="stylesheet"
     >
+    <link rel="stylesheet" href="./css/premium.css">
+<link rel="stylesheet" href="./css/particles-3d.css">
+<link rel="stylesheet" href="./css/live-radar.css">
 </head>
 
 <body>
@@ -272,126 +280,39 @@
                         <!-- CHART -->
 
                         <div class="chart-area">
+<div class="radar-stage" role="img" aria-label="Animated data signal radar visualization">
+  <div class="radar-topline">
+    <span>LIVE SIGNAL RADAR</span>
+    <span class="radar-status"><i></i> SYSTEM ACTIVE</span>
+  </div>
 
-                            <svg
-                                class="chart-svg"
-                                viewBox="0 0 600 250"
-                                preserveAspectRatio="none"
-                                aria-label="Analytics trend chart"
-                                role="img"
-                            >
+  <div class="radar-display">
+    <div class="radar-ring radar-ring-outer"></div>
+    <div class="radar-ring radar-ring-middle"></div>
+    <div class="radar-ring radar-ring-inner"></div>
+    <div class="radar-cross radar-cross-x"></div>
+    <div class="radar-cross radar-cross-y"></div>
 
-                                <defs>
+    <div class="radar-sweep"></div>
+    <div class="radar-core"></div>
 
-                                    <linearGradient
-                                        id="chartGradient"
-                                        x1="0"
-                                        y1="0"
-                                        x2="0"
-                                        y2="1"
-                                    >
-                                        <stop
-                                            offset="0%"
-                                            stop-color="#c9a227"
-                                            stop-opacity="0.35"
-                                        />
+    <span class="radar-node radar-node-a"></span>
+    <span class="radar-node radar-node-b"></span>
+    <span class="radar-node radar-node-c"></span>
+    <span class="radar-node radar-node-d"></span>
+    <span class="radar-node radar-node-e"></span>
 
-                                        <stop
-                                            offset="100%"
-                                            stop-color="#c9a227"
-                                            stop-opacity="0"
-                                        />
-                                    </linearGradient>
+    <span class="radar-tag radar-tag-a">SQL <b>·</b> 01</span>
+    <span class="radar-tag radar-tag-b">PY <b>·</b> 02</span>
+    <span class="radar-tag radar-tag-c">BI <b>·</b> 03</span>
+  </div>
 
-                                </defs>
-
-
-                                <!-- Grid -->
-
-                                <line
-                                    x1="0"
-                                    y1="50"
-                                    x2="600"
-                                    y2="50"
-                                    class="chart-grid"
-                                />
-
-                                <line
-                                    x1="0"
-                                    y1="125"
-                                    x2="600"
-                                    y2="125"
-                                    class="chart-grid"
-                                />
-
-                                <line
-                                    x1="0"
-                                    y1="200"
-                                    x2="600"
-                                    y2="200"
-                                    class="chart-grid"
-                                />
-
-
-                                <!-- Area -->
-
-                                <path
-                                    d="M0,200
-                                       C70,180 90,185 145,145
-                                       C205,105 235,160 290,125
-                                       C350,85 380,110 430,75
-                                       C485,35 525,65 600,25
-                                       L600,250
-                                       L0,250 Z"
-                                    fill="url(#chartGradient)"
-                                />
-
-
-                                <!-- Line -->
-
-                                <path
-                                    d="M0,200
-                                       C70,180 90,185 145,145
-                                       C205,105 235,160 290,125
-                                       C350,85 380,110 430,75
-                                       C485,35 525,65 600,25"
-                                    class="chart-line"
-                                />
-
-
-                                <!-- Points -->
-
-                                <circle
-                                    cx="145"
-                                    cy="145"
-                                    r="5"
-                                    class="chart-point"
-                                />
-
-                                <circle
-                                    cx="290"
-                                    cy="125"
-                                    r="5"
-                                    class="chart-point"
-                                />
-
-                                <circle
-                                    cx="430"
-                                    cy="75"
-                                    r="5"
-                                    class="chart-point"
-                                />
-
-                                <circle
-                                    cx="600"
-                                    cy="25"
-                                    r="5"
-                                    class="chart-point"
-                                />
-
-                            </svg>
-
-                        </div>
+  <div class="radar-bottomline">
+    <span><i class="radar-legend-dot"></i> DATA STREAM</span>
+    <span class="radar-coordinate">X: 04.82 &nbsp; Y: 09.61</span>
+  </div>
+</div>
+</div>
 
 
                         <!-- METRICS -->
@@ -1005,6 +926,7 @@
     <!-- Main JavaScript -->
     <script type="module" src="./js/main.js"></script>
 
+<script type="module" src="./js/particles-3d.js"></script>
 </body>
 
 </html>

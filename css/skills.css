@@ -1580,3 +1580,608 @@ button {
     }
 
 }
+
+/* LAKSHYA PREMIUM INTERFACE V1 */
+
+/* Refined typography and accessible interactions */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+    background: rgba(201, 162, 39, 0.32);
+    color: #ffffff;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: 2px solid #d8b64b;
+    outline-offset: 4px;
+}
+
+/* Elegant navigation */
+.site-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.075);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
+
+.logo-mark {
+    box-shadow: inset 0 0 18px rgba(201, 162, 39, 0.07);
+    transition: border-color 220ms ease, box-shadow 220ms ease;
+}
+
+.logo:hover .logo-mark {
+    border-color: rgba(220, 183, 75, 0.8);
+    box-shadow: 0 0 20px rgba(201, 162, 39, 0.12);
+}
+
+.nav-link {
+    transition: color 200ms ease;
+}
+
+.nav-link:hover {
+    color: #f0d681;
+}
+
+.nav-cta,
+.btn {
+    transition:
+        transform 220ms ease,
+        background 220ms ease,
+        border-color 220ms ease,
+        box-shadow 220ms ease;
+}
+
+.nav-cta:hover,
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Premium gold details on interactive cards */
+.experience-card-inner,
+.project-card,
+.skill-card,
+.highlight-card,
+.workflow-card,
+.data-card,
+.cta-box,
+.contact-card,
+.intro-card {
+    transition:
+        border-color 240ms ease,
+        box-shadow 240ms ease,
+        transform 240ms ease;
+}
+
+.project-card:hover,
+.skill-card:hover,
+.highlight-card:hover,
+.workflow-card:hover,
+.data-card:hover,
+.contact-card:hover,
+.intro-card:hover {
+    border-color: rgba(201, 162, 39, 0.38);
+    box-shadow: 0 16px 42px rgba(0, 0, 0, 0.18);
+}
+
+.skill-tags span,
+.technology-list span,
+.skill-cloud span {
+    transition:
+        border-color 180ms ease,
+        background 180ms ease,
+        color 180ms ease;
+}
+
+.skill-tags span:hover,
+.technology-list span:hover,
+.skill-cloud span:hover {
+    border-color: rgba(201, 162, 39, 0.48);
+    background-color: rgba(201, 162, 39, 0.075);
+}
+
+/* Better reading comfort */
+.section-eyebrow {
+    letter-spacing: 0.16em;
+}
+
+.section-heading h2,
+.experience-heading h1,
+.skills-heading h1 {
+    text-wrap: balance;
+}
+
+.experience-intro,
+.skills-intro {
+    max-width: 680px;
+}
+
+/* Premium but restrained scrollbar */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #80651d #100d0e;
+}
+
+*::-webkit-scrollbar {
+    width: 9px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #100d0e;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: #80651d;
+    border: 2px solid #100d0e;
+    border-radius: 20px;
+}
+
+/* Responsive polish */
+@media (max-width: 760px) {
+    html {
+        scroll-padding-top: 72px;
+    }
+
+    .experience-card-inner,
+    .project-card,
+    .skill-card,
+    .highlight-card,
+    .workflow-card,
+    .data-card,
+    .cta-box,
+    .contact-card,
+    .intro-card {
+        max-width: 100%;
+    }
+
+    .nav-cta:hover,
+    .btn:hover,
+    .project-card:hover,
+    .skill-card:hover,
+    .highlight-card:hover,
+    .workflow-card:hover,
+    .data-card:hover,
+    .contact-card:hover,
+    .intro-card:hover {
+        transform: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+
+/* LAKSHYA VISUAL REDESIGN V2 */
+:root {
+    --premium-gold: #dfbd62;
+    --premium-gold-bright: #f1d98a;
+    --premium-ink: #09090b;
+    --premium-panel: #111013;
+    --premium-line: rgba(223, 189, 98, .20);
+}
+
+html {
+    scroll-behavior: smooth;
+    background: var(--premium-ink);
+}
+
+body {
+    font-family: "DM Sans", sans-serif !important;
+    background:
+        radial-gradient(ellipse at 12% 8%, rgba(108, 54, 65, .11), transparent 31rem),
+        radial-gradient(ellipse at 90% 35%, rgba(194, 151, 48, .055), transparent 34rem),
+        #09090b !important;
+    color: #f5f1e9;
+    letter-spacing: -.012em;
+}
+
+h1, h2, h3, h4,
+.hero-title,
+.experience-heading h1,
+.skills-heading h1,
+.section-heading h2 {
+    font-family: "Space Grotesk", sans-serif !important;
+    letter-spacing: -.045em !important;
+}
+
+h1, .experience-heading h1, .skills-heading h1 {
+    font-weight: 700 !important;
+    line-height: 1.04 !important;
+}
+
+h1 span, h2 span {
+    color: var(--premium-gold-bright);
+}
+
+.container {
+    width: min(1160px, calc(100% - 64px)) !important;
+    max-width: 1160px !important;
+}
+
+.site-header {
+    background: rgba(9, 9, 11, .86) !important;
+    border-bottom: 1px solid rgba(255,255,255,.085) !important;
+    backdrop-filter: blur(22px) saturate(135%) !important;
+    -webkit-backdrop-filter: blur(22px) saturate(135%) !important;
+}
+
+.logo-mark {
+    border-radius: 9px !important;
+    background: linear-gradient(145deg, #332119, #110e10) !important;
+    color: var(--premium-gold-bright) !important;
+    box-shadow: 0 0 28px rgba(223,189,98,.07);
+}
+
+.nav-link {
+    font-weight: 600 !important;
+}
+
+.nav-cta, .btn {
+    border-radius: 7px !important;
+    font-weight: 700 !important;
+}
+
+.section-eyebrow {
+    color: var(--premium-gold) !important;
+    letter-spacing: .19em !important;
+    font-size: 10px !important;
+    font-weight: 800 !important;
+}
+
+.section-heading {
+    margin-bottom: 42px !important;
+}
+
+.section-heading h2 {
+    font-size: clamp(32px, 4vw, 48px) !important;
+    line-height: 1.12 !important;
+}
+
+.experience-card-inner,
+.project-card,
+.skill-card,
+.highlight-card,
+.workflow-card,
+.data-card,
+.cta-box,
+.contact-card,
+.intro-card {
+    border: 1px solid rgba(255,255,255,.09) !important;
+    border-radius: 15px !important;
+    background:
+        radial-gradient(ellipse at 100% 0%, rgba(223,189,98,.055), transparent 48%),
+        linear-gradient(145deg, rgba(24,20,22,.98), rgba(13,12,14,.98)) !important;
+    box-shadow: 0 16px 48px rgba(0,0,0,.16);
+}
+
+.skill-card, .project-card, .highlight-card, .workflow-card {
+    padding: clamp(22px, 3vw, 34px) !important;
+}
+
+.skill-card:hover, .project-card:hover,
+.highlight-card:hover, .workflow-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(223,189,98,.42) !important;
+    box-shadow: 0 24px 60px rgba(0,0,0,.27);
+}
+
+.skill-card h3, .project-card h3,
+.experience-card-inner h3 {
+    font-size: clamp(20px, 2vw, 27px) !important;
+    line-height: 1.2 !important;
+}
+
+.skill-tags span, .technology-list span, .skill-cloud span {
+    border: 1px solid rgba(255,255,255,.12) !important;
+    border-radius: 6px !important;
+    background: rgba(255,255,255,.025) !important;
+    padding: 8px 11px !important;
+}
+
+.skill-tags span:hover, .technology-list span:hover,
+.skill-cloud span:hover {
+    color: var(--premium-gold-bright) !important;
+    border-color: rgba(223,189,98,.52) !important;
+    background: rgba(223,189,98,.08) !important;
+}
+
+.project-visual {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.timeline .experience-card-inner {
+    padding: clamp(24px, 3.5vw, 40px) !important;
+}
+
+.experience-date {
+    color: var(--premium-gold-bright) !important;
+    letter-spacing: .13em !important;
+}
+
+.technology-label {
+    color: var(--premium-gold) !important;
+    letter-spacing: .16em !important;
+}
+
+input, textarea, select {
+    border-radius: 8px !important;
+}
+
+a:focus-visible, button:focus-visible,
+input:focus-visible, textarea:focus-visible {
+    outline: 2px solid var(--premium-gold-bright);
+    outline-offset: 4px;
+}
+
+::selection {
+    background: rgba(223,189,98,.30);
+    color: white;
+}
+
+@media (max-width: 760px) {
+    .container {
+        width: calc(100% - 36px) !important;
+    }
+
+    .section-heading {
+        margin-bottom: 28px !important;
+    }
+
+    .skill-card, .project-card, .highlight-card,
+    .workflow-card, .timeline .experience-card-inner {
+        padding: 22px !important;
+    }
+
+    .skill-card:hover, .project-card:hover,
+    .highlight-card:hover, .workflow-card:hover {
+        transform: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+        animation-duration: .01ms !important;
+        transition-duration: .01ms !important;
+    }
+}
+
+
+/* LAKSHYA COLOR SYSTEM V3 */
+:root {
+    --v3-bg: #080b16;
+    --v3-panel: #101629;
+    --v3-panel-light: #151d33;
+    --v3-text: #f4f6ff;
+    --v3-muted: #a6b0ca;
+    --v3-cyan: #5de4ff;
+    --v3-violet: #a78bfa;
+    --v3-coral: #ff8e8e;
+    --v3-gold: #f6ce70;
+    --v3-line: rgba(172, 192, 255, .16);
+}
+
+html {
+    background: var(--v3-bg) !important;
+}
+
+body {
+    background:
+        radial-gradient(ellipse at 8% 12%, rgba(54, 104, 210, .19), transparent 36rem),
+        radial-gradient(ellipse at 92% 18%, rgba(129, 74, 211, .15), transparent 32rem),
+        radial-gradient(ellipse at 50% 85%, rgba(34, 185, 194, .075), transparent 38rem),
+        var(--v3-bg) !important;
+    color: var(--v3-text) !important;
+    font-family: "Outfit", "DM Sans", sans-serif !important;
+}
+
+h1, h2, h3, h4,
+.experience-heading h1,
+.skills-heading h1,
+.section-heading h2 {
+    font-family: "Space Grotesk", "Outfit", sans-serif !important;
+    color: var(--v3-text);
+    letter-spacing: -.045em !important;
+}
+
+h1 span, h2 span {
+    color: var(--v3-cyan) !important;
+    background: linear-gradient(100deg, #5de4ff 0%, #a78bfa 54%, #f6ce70 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+p {
+    color: var(--v3-muted);
+}
+
+.section-eyebrow {
+    color: var(--v3-cyan) !important;
+    letter-spacing: .2em !important;
+}
+
+.site-header {
+    background: rgba(8, 11, 22, .86) !important;
+    border-bottom: 1px solid var(--v3-line) !important;
+    backdrop-filter: blur(24px) saturate(150%) !important;
+}
+
+.logo-mark {
+    border: 1px solid rgba(93, 228, 255, .48) !important;
+    background: linear-gradient(145deg, #17253e, #17142d) !important;
+    color: var(--v3-cyan) !important;
+    border-radius: 10px !important;
+    box-shadow: 0 0 24px rgba(93, 228, 255, .09);
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--v3-cyan) !important;
+}
+
+.nav-cta, .btn {
+    border-radius: 9px !important;
+}
+
+.nav-cta {
+    border-color: rgba(93, 228, 255, .65) !important;
+    color: var(--v3-cyan) !important;
+}
+
+.btn-primary {
+    background: linear-gradient(110deg, #5de4ff, #a78bfa) !important;
+    border-color: transparent !important;
+    color: #090d19 !important;
+    box-shadow: 0 8px 28px rgba(93, 228, 255, .13);
+}
+
+.btn-secondary {
+    border-color: var(--v3-line) !important;
+}
+
+.experience-card-inner,
+.project-card,
+.skill-card,
+.highlight-card,
+.workflow-card,
+.data-card,
+.cta-box,
+.contact-card,
+.intro-card {
+    background:
+        linear-gradient(145deg, rgba(21, 29, 51, .96), rgba(11, 15, 29, .98)) !important;
+    border: 1px solid var(--v3-line) !important;
+    border-radius: 17px !important;
+    box-shadow: 0 18px 50px rgba(0, 0, 0, .22);
+    transition: border-color .24s ease, transform .24s ease, box-shadow .24s ease;
+}
+
+.project-card:hover,
+.skill-card:hover,
+.highlight-card:hover,
+.workflow-card:hover,
+.contact-card:hover,
+.intro-card:hover {
+    border-color: rgba(93, 228, 255, .48) !important;
+    box-shadow: 0 22px 60px rgba(0, 0, 0, .3), 0 0 28px rgba(93, 228, 255, .045);
+    transform: translateY(-4px);
+}
+
+/* Projects: each project gets its own accent colour */
+.project-card:nth-child(3n+1) {
+    border-top: 2px solid var(--v3-cyan) !important;
+}
+.project-card:nth-child(3n+2) {
+    border-top: 2px solid var(--v3-violet) !important;
+}
+.project-card:nth-child(3n+3) {
+    border-top: 2px solid var(--v3-coral) !important;
+}
+
+.project-card:nth-child(3n+1) .section-eyebrow,
+.project-card:nth-child(3n+1) .project-category {
+    color: var(--v3-cyan) !important;
+}
+.project-card:nth-child(3n+2) .section-eyebrow,
+.project-card:nth-child(3n+2) .project-category {
+    color: var(--v3-violet) !important;
+}
+.project-card:nth-child(3n+3) .section-eyebrow,
+.project-card:nth-child(3n+3) .project-category {
+    color: var(--v3-coral) !important;
+}
+
+/* Skills: distinct colours create faster visual scanning */
+.skill-card:nth-child(6n+1) { border-top: 2px solid var(--v3-cyan) !important; }
+.skill-card:nth-child(6n+2) { border-top: 2px solid var(--v3-violet) !important; }
+.skill-card:nth-child(6n+3) { border-top: 2px solid var(--v3-gold) !important; }
+.skill-card:nth-child(6n+4) { border-top: 2px solid #7de2b8 !important; }
+.skill-card:nth-child(6n+5) { border-top: 2px solid var(--v3-coral) !important; }
+.skill-card:nth-child(6n+6) { border-top: 2px solid #78a8ff !important; }
+
+.skill-card:nth-child(6n+1) .skill-type { color: var(--v3-cyan) !important; }
+.skill-card:nth-child(6n+2) .skill-type { color: var(--v3-violet) !important; }
+.skill-card:nth-child(6n+3) .skill-type { color: var(--v3-gold) !important; }
+.skill-card:nth-child(6n+4) .skill-type { color: #7de2b8 !important; }
+.skill-card:nth-child(6n+5) .skill-type { color: var(--v3-coral) !important; }
+.skill-card:nth-child(6n+6) .skill-type { color: #78a8ff !important; }
+
+.skill-tags span, .technology-list span, .skill-cloud span {
+    background: rgba(255, 255, 255, .035) !important;
+    border: 1px solid rgba(172, 192, 255, .17) !important;
+    border-radius: 7px !important;
+}
+
+.skill-tags span:hover, .technology-list span:hover, .skill-cloud span:hover {
+    border-color: var(--v3-cyan) !important;
+    color: var(--v3-cyan) !important;
+    background: rgba(93, 228, 255, .075) !important;
+}
+
+.experience-date, .technology-label {
+    color: var(--v3-gold) !important;
+}
+
+.experience-card-inner h3,
+.project-card h3,
+.skill-card h3 {
+    color: var(--v3-text) !important;
+}
+
+input, textarea, select {
+    background: rgba(16, 22, 41, .9) !important;
+    color: var(--v3-text) !important;
+    border-color: var(--v3-line) !important;
+}
+
+a:focus-visible, button:focus-visible,
+input:focus-visible, textarea:focus-visible {
+    outline: 2px solid var(--v3-cyan);
+    outline-offset: 4px;
+}
+
+::selection {
+    background: rgba(93, 228, 255, .3);
+    color: white;
+}
+
+@media (max-width: 760px) {
+    .project-card:hover, .skill-card:hover,
+    .highlight-card:hover, .workflow-card:hover,
+    .contact-card:hover, .intro-card:hover {
+        transform: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+        animation-duration: .01ms !important;
+        transition-duration: .01ms !important;
+    }
+}
